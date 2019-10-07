@@ -106,6 +106,12 @@ section > h3{ padding-left:20px; text-align: center; }
 
 footer{ text-align:center; padding-bottom:25px; }
 
+.slider { height: auto; position: relative; overflow: hidden; display: flex; flex-flow: row nowrap; align-items: flex-end; justify-content: center; }
+.slider__nav { margin: 0 5px; border-radius: 50%; z-index: 10; cursor: pointer; outline: none;  -webkit-appearance: none; appearance: none; -webkit-backface-visibility: hidden; backface-visibility: hidden; transition: all .3s ease-in-out; width: 10px; height: 10px; background: #282a36; }
+.slider__nav:checked{ background: #bd93f3; }
+.slider__inner { position: absolute; top: 0; left: 0; width: 200%; height: 100%; transition: left 0.4s; display: flex; flex-flow: row nowrap; }
+.slider__contents { height: 100%; text-align: center; display: flex; flex: 1; flex-flow: column nowrap; align-items: center; justify-content: flex-start; }
+
 /* Night Mode */
 body.night-mode{ background:url('../img/icons-background-dark.svg') repeat 25px 25px #3C4556; color:#BCC2CD; }
 
@@ -119,6 +125,9 @@ body.night-mode #hero-section:before{ mix-blend-mode: normal; background: rgba(6
 
 body.night-mode section{ background:rgb(45, 51, 62) }
 body.night-mode section > h2:first-child{ background:#282a36; color:rgb(189, 147, 243); }
+
+body.night-mode .slider__nav{ background:#BCC2CD; }
+body.night-mode .slider__nav:checked{ background:#bd93f3; }
 
 body.night-mode #servicos .gallery-item a{ background:#282a36; }
 body.night-mode #servicos .gallery-item:not(.active) a:hover{ background: rgba(40, 42, 54, 0.4) }
