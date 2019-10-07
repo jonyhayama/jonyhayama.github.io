@@ -121,10 +121,22 @@ document.addEventListener("DOMContentLoaded", function() {
   document.head.appendChild(style);
 
   clients.innerHTML = '<div class="slider">' + radios_html + '<div class="slider__inner">' + slides_html + '</div></div>';
-  resizeSlider();
   
   window.addEventListener('resize', function(){
     resizeSlider();
   });
+
+  var images = document.querySelectorAll('#more-clients .slider__contents:first-child img');
+  var total_images = images.length;
+  var img_counter = 0;
+  [].forEach.call( images, function( img ) {
+    img.addEventListener( 'load', incrementCounter, false );
+  } );
+  function incrementCounter() {
+    img_counter++;
+    if ( img_counter === total_images ) {
+      resizeSlider();
+    }
+  }
 
 });
