@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
   var more_clients = document.querySelectorAll('#more-clients > ul > li');
   var clients = document.getElementById('more-clients');
-  var chunk = clients.getAttribute('data-per-page');
+  var chunk = parseInt(clients.getAttribute('data-per-page'));
   var style = document.createElement('style');
   var slides_html = '';
   var radios_html = '';
@@ -118,6 +118,7 @@ document.addEventListener("DOMContentLoaded", function() {
     slides_html = slides_html + '<div class="slider__contents"><ul class="gallery gallery-columns-' + chunk + '">' + lis.map(function(elem){ return elem.outerHTML }).join('') + '</ul></div>';
     style.innerHTML += '.slider__nav:checked:nth-of-type(' + count + ') ~ .slider__inner { left: ' + left + '%; }';
   }
+  style.innerHTML += '.slider__inner{width:' + ((count-1) * 100) + '%}';
   document.head.appendChild(style);
 
   clients.innerHTML = '<div class="slider">' + radios_html + '<div class="slider__inner">' + slides_html + '</div></div>';
