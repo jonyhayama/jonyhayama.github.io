@@ -36,6 +36,7 @@ img {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: row;
+  position: relative;
 }
 .left-column {
   width: 33%;
@@ -166,11 +167,19 @@ h1 {
   font-size:11px;
 }
 
+.buttons{ position:absolute; left:100%; margin-left:1px; margin-top:20px; }
+.buttons a{display:inline-block;white-space: nowrap;padding:5px 10px;background:#bd93f3;margin:2.5px 0;line-height: 1; color:#3C4556; border-radius:0 5px 5px 0; }
+.buttons a i{ width:18px; }
+.buttons a span{  display:inline-block; max-width:0; overflow:hidden; transition: all .3s ease-in-out; }
+.buttons a:hover{ background:#3C4556; color:#ff79c6; }
+.buttons a:hover > span{ max-width:200px; margin-left:5px; }
+
 @page {
   size: A4;
   margin: 0;
 }
 @media print {
+  .buttons{display:none;}
   .page {
     margin: 0;
     border: initial;
