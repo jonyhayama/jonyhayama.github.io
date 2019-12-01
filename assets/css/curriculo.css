@@ -60,6 +60,9 @@ h1 {
 
 .left-column .photo{
   border-radius: 100%;
+  width: 130px;
+  margin: 0 auto;
+  display: block;
 }
 .left-column h1{
   margin-bottom:0;
@@ -122,12 +125,17 @@ h1 {
 .skill-meter .skill-name{ display:flex; align-items:center; justify-content:space-between }
 .skill-meter .skill-grade{ font-size:0.75em;}
 
+.interests{ margin:0 -5px; padding:0; list-style:none; }
+.interests li{ display:inline-block; padding:0 5px; }
+.interests li img{ width:26px; }
+
 .right-column h2 i{
   margin-right:5px;
 }
 .right-column h2{
   color: #282a36;
   font-size:18px;
+  margin-top: 0;
 }
 .right-column a{
   color:#ff79c6;
@@ -164,7 +172,7 @@ h1 {
   text-align:center;
 }
 .right-column td div{
-  font-size:11px;
+  font-size: 12px;
 }
 
 .buttons{ position:absolute; left:100%; margin-left:1px; margin-top:20px; }
