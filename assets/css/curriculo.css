@@ -26,6 +26,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+.hidden { 
+  display: none;
+}
 .page {
   width: 210mm;
   height: 296.8mm;
