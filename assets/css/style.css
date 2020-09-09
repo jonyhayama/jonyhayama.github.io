@@ -112,7 +112,7 @@ section > h3{ padding-left:20px; text-align: center; }
 .accordion > .accordion-title{margin:0; padding:5px 20px; border-bottom:1px solid #ddd; cursor:pointer;}
 .accordion > .accordion-title:first-child{ border-top:1px solid #ddd;}
 .accordion > .accordion-title + div{ max-height: 0; overflow:hidden; transition: all .3s linear; padding:0 20px; }
-.accordion > .accordion-title.active + div{ max-height: 300px; padding:20px; border-bottom:1px solid #ddd; }
+.accordion > .accordion-title.active + div{ max-height: 90vh; padding:20px; border-bottom:1px solid #ddd; overflow: auto }
 
 #contato form{ width:50%; margin:0 auto; padding-bottom:15px; }
 #contato form input,
