@@ -78,26 +78,27 @@ body {
   transform: translateX(-50%);
 }
 
-.clock .number span {
+.clock .number:after {
+  content: attr(data-number);
   display: inline-block;
   transform: rotate(calc(var(--rotation) * -1));
 }
 
-.clock .number1 { --rotation: 30deg; }
-.clock .number2 { --rotation: 60deg; }
-.clock .number3 { --rotation: 90deg; }
-.clock .number4 { --rotation: 120deg; }
-.clock .number5 { --rotation: 150deg; }
-.clock .number6 { --rotation: 180deg; }
-.clock .number7 { --rotation: 210deg; }
-.clock .number8 { --rotation: 240deg; }
-.clock .number9 { --rotation: 270deg; }
-.clock .number10 { --rotation: 300deg; }
-.clock .number11 { --rotation: 330deg; }
-.clock .number12 { --rotation: 360deg; }
+.clock .number[data-number="1"] { --rotation: 30deg; }
+.clock .number[data-number="2"] { --rotation: 60deg; }
+.clock .number[data-number="3"] { --rotation: 90deg; }
+.clock .number[data-number="4"] { --rotation: 120deg; }
+.clock .number[data-number="5"] { --rotation: 150deg; }
+.clock .number[data-number="6"] { --rotation: 180deg; }
+.clock .number[data-number="7"] { --rotation: 210deg; }
+.clock .number[data-number="8"] { --rotation: 240deg; }
+.clock .number[data-number="9"] { --rotation: 270deg; }
+.clock .number[data-number="10"] { --rotation: 300deg; }
+.clock .number[data-number="11"] { --rotation: 330deg; }
+.clock .number[data-number="12"] { --rotation: 360deg; }
 
-.clock .number10,
-.clock .number11 {
+.clock .number[data-number="10"],
+.clock .number[data-number="11"] {
   padding-top: 15px;
 }
 
