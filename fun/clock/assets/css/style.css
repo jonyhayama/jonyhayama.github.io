@@ -61,9 +61,26 @@ body {
   height: 100%;
   text-align: center;
   transform: rotate(var(--rotation));
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: bold;
-  padding-top: 5px;
+  padding: 10px;
+}
+
+.clock .number:before {
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 10px;
+  background: #000;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.clock .number span {
+  display: inline-block;
+  transform: rotate(calc(var(--rotation) * -1));
 }
 
 .clock .number1 { --rotation: 30deg; }
@@ -78,6 +95,11 @@ body {
 .clock .number10 { --rotation: 300deg; }
 .clock .number11 { --rotation: 330deg; }
 .clock .number12 { --rotation: 360deg; }
+
+.clock .number10,
+.clock .number11 {
+  padding-top: 15px;
+}
 
 .clock .hand {
   --rotation: 0;
@@ -94,16 +116,16 @@ body {
 
 .clock .hand.second {
   width: 3px;
-  height: 45%;
+  height: 40%;
   background: #ff0000;
 }
 
 .clock .hand.minute {
   width: 7px;
-  height: 40%;
+  height: 35%;
 }
 
 .clock .hand.hour {
   width: 10px;
-  height: 35%;
+  height: 30%;
 }
