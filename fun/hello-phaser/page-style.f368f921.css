@@ -1,0 +1,2 @@
+*,:after,:before{box-sizing:border-box;font-family:Courier New,Courier,monospace}body{background:#daedbd;margin:0;padding:0;height:100vh}.wrapper,body{display:flex;align-items:center;justify-content:center}.wrapper{flex-wrap:wrap;text-align:center;max-width:80%;flex-direction:column}.credits{margin-top:4rem}.credits p{margin-bottom:.75rem;margin-top:0}.credits ul{margin:0;padding:0}.credits li{list-style:none}.credits li:before{content:"- "}
+/*# sourceMappingURL=/page-style.f368f921.css.map */
