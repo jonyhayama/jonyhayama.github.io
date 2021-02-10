@@ -29,7 +29,9 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   /* Smooth Scroll */
-  var $smoothScroll = new SmoothScroll('a[data-scroll]');
+  var $smoothScroll = new SmoothScroll('a[data-scroll]', {
+    offset: 76
+  });
 
   /* Tabs */
   var selectTab = function($elem){
