@@ -71,6 +71,10 @@ section > h3{ padding-left:20px; text-align: center; }
   background: rgba(105,242,198, 0.6);
   background: linear-gradient(130deg, rgba(105,242,198,0.6) 0%, rgba(127,151,216,0.6) 50%, rgba(186,37,251,0.6) 100%);
   transition:all .3s ease-in-out; opacity:0; z-index: 2; }
+  section:nth-child(even) .links-gallery a:before{
+    background: rgba(249,114,148, 0.6);
+    background: linear-gradient(225deg, rgba(249,114,148,0.6) 0%, rgba(246,170,104,0.6) 50%, rgba(246,226,99,0.6) 100%);
+  }
 .links-gallery a img{ transition: all .3s ease-in-out;}
 .links-gallery a:hover:before{opacity:1; transform:scale(1)}
 .links-gallery a:hover img{ filter: grayscale(100%); }
