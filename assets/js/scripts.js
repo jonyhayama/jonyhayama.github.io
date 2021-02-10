@@ -28,23 +28,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 
-  /* Header Hide on Scroll */
-  var scrollPos = 0;
-  var $mainHeader = document.getElementById('main-header');
-  window.addEventListener('scroll', function() {
-    var windowY = window.scrollY;
-    if (windowY < scrollPos) {
-      // Scrolling UP
-      $mainHeader.classList.add('is-visible');
-      $mainHeader.classList.remove('is-hidden');
-    } else {
-      // Scrolling DOWN
-      $mainHeader.classList.add('is-hidden');
-      $mainHeader.classList.remove('is-visible');
-    }
-    scrollPos = windowY;
-  });
-
   /* Smooth Scroll */
   var $smoothScroll = new SmoothScroll('a[data-scroll]');
 

@@ -22,8 +22,6 @@ button.button{ border:none; cursor:pointer; }
 .night-mode #site-logo:before{ background: url('../img/jony-logo.png') no-repeat center; background-size:contain; }
 
 #main-header{ display:flex; background:#fff; box-shadow:0 0 5px rgba(0,0,0,0.3); position:fixed; top:0; left:0; right:0; z-index:99; height:56px; transition: all .3s ease-in-out; }
-#main-header.is-hidden{ top:-56px; }
-#main-header.is-visible { top:0; }
 
 .menu{ display:flex; height:100%; margin:0; padding:0; }
 .menu li{ list-style:none; }
