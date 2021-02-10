@@ -42,7 +42,14 @@ button.button{ border:none; cursor:pointer; }
 .btn-mobile-nav-wrapper{ display:none; }
 
 section{ max-width: 1080px; margin:40px auto; background:#fff; box-shadow:0 5px 5px rgba(0,0,0,0.3); border-radius:8px; overflow:hidden; transition:all .3s ease-in-out; }
-section > h2:first-child{ background:#373435; margin-top:0; padding:10px 20px; color:#fff; transition:all .3s ease-in-out; }
+section > h2:first-child{ 
+  background: rgb(105,242,198);
+  background: linear-gradient(130deg, rgba(105,242,198,1) 0%, rgba(127,151,216,1) 50%, rgba(186,37,251,1) 100%);
+  margin-top:0; padding:10px 20px; color:#fff; transition:all .3s ease-in-out; }
+section:nth-child(even) > h2:first-child{
+  background: rgb(249,114,148);
+  background: linear-gradient(225deg, rgba(249,114,148,1) 0%, rgba(246,170,104,1) 50%, rgba(246,226,99,1) 100%);
+}
 section > p,
 section > h3{ padding-left:20px; text-align: center; }
 
@@ -142,6 +149,7 @@ body.night-mode #btn-night-mode:before{opacity:0;}
 body.night-mode #btn-night-mode:after{opacity:1}
 
 body.night-mode section{ background:#383838 }
+body.night-mode section > h2:first-child{ color:#383838 }
 
 body.night-mode .slider__nav{ background:#BCC2CD; }
 body.night-mode .slider__nav:checked{ background:#BA25FB; }
