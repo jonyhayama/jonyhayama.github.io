@@ -43,18 +43,6 @@ button.button{ border:none; cursor:pointer; }
 
 .btn-mobile-nav-wrapper{ display:none; }
 
-#hero-section{max-width:100%; margin-top:0; box-shadow:none; background: url('../img/hero-background.jpg') no-repeat fixed; background-size: cover; min-height: calc(100vh - 56px); display:flex; flex-direction: column; padding:30px; align-items:center; justify-content:center; position:relative; transition: all .3s ease-in-out;}
-#hero-section > *{ z-index:2; }
-#hero-section:before{content:'';top:0;left:0;right:0;bottom:0;background:rgba(186, 37, 251,.6); mix-blend-mode: luminosity; display:block;position:absolute; transition: all .3s ease-in-out;
-  webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
-  opacity: 1
-}
-#hero-section h2{ font-size:32px; font-weight:100; margin-bottom:0; background:none; color:#373435; }
-#hero-section p{ font-size: 16px; font-weight:100; font-family: "qanelas_soft", sans-serif; margin-bottom: 60px; }
-#hero-section div{ font-size:0; }
-#hero-section a.button{ font-size:20px; padding:10px 20px; text-transform:uppercase; margin:0 10px; }
-
 section{ max-width: 1080px; margin:40px auto; background:#fff; box-shadow:0 5px 5px rgba(0,0,0,0.3); border-radius:8px; overflow:hidden; transition:all .3s ease-in-out; }
 section > h2:first-child{ background:#373435; margin-top:0; padding:10px 20px; color:#fff; transition:all .3s ease-in-out; }
 section > p,
@@ -155,9 +143,6 @@ body.night-mode #main-header a{ color: #fff }
 body.night-mode #btn-night-mode:before{opacity:0;}
 body.night-mode #btn-night-mode:after{opacity:1}
 
-body.night-mode #hero-section h2{ color:#BCC2CD; }
-body.night-mode #hero-section:before{ mix-blend-mode: normal; background: rgba(60, 69, 86, .8);}
-
 body.night-mode section{ background:#383838 }
 
 body.night-mode .slider__nav{ background:#BCC2CD; }
@@ -182,10 +167,6 @@ body.night-mode #just-for-fun .gallery-item strong{ color: #fff }
     #secondary-navivation{padding-left:20px; padding-right:5px; }
     .btn-mobile-nav-wrapper{ display:block; }
     .btn-mobile-nav-wrapper a{ display:flex; height:100%; align-items:center; padding: 10px; text-decoration:none; font-size:1.5em;}
-
-    #hero-section{ width:100%; }
-    #hero-section h2{ text-align:center; }
-    #hero-section a.button{ margin:15px auto; display:block; }
 
     #servicos .tab-content{ width:100%; }
     #servicos .gallery .gallery-item {width:100%; margin:5px 20px; }
