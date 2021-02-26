@@ -96,6 +96,22 @@ section > h3{ padding-left:20px; text-align: center; }
 #sobre .gallery .gallery-item + .gallery-item{ width:33.3%; }
 #sobre img{ border-radius:50%; }
 
+#blog h2 { margin-bottom: 0;}
+#blog-posts { padding: 15px 0; }
+#blog-posts .post { display: flex; flex-wrap: wrap; flex-direction: row; align-items: center; padding: 15px 30px; }
+#blog-posts .post-cover { width: 50%; max-width: 350px; font-size: 0;}
+#blog-posts .post-content { flex: 1; padding-left: 20px; }
+#blog-posts h3 { margin: 0; }
+#blog-posts h3 a { text-decoration: none; color: #BA25FB; transition: all .3s ease-in-out; }
+#blog-posts h3 a:hover { color: #69f2c6 }
+#blog-posts .post-meta { font-size: 0.85em; padding: 5px 0 15px; }
+
+#blog-posts.is-loading, #blog-posts.has-error{ text-align: center; padding: 30px; }
+#blog-posts.is-loading:before{ content: 'Carregando...' }
+
+.night-mode #blog-posts h3 a { color: #69f2c6; }
+.night-mode #blog-posts h3 a:hover { color: #BA25FB; }
+
 #parcerias .gallery .gallery-item{ padding:20px; }
 #parcerias .gallery .gallery-item a{ padding:5px; border-radius: 10px; overflow: hidden; }
 .night-mode #parcerias .gallery .gallery-item a{ background: rgba(188, 194, 205, 0.8); }
@@ -199,4 +215,7 @@ body.night-mode #just-for-fun .gallery-item strong{ color: #fff }
 
     .gallery .gallery-item{ width:50%; }
     section{ width:80%; }
+
+    #blog-posts .post-cover{ max-width: 100%; width: 100%; }
+    #blog-posts .post-content{ padding: 20px 0 40px 0; }
 }
