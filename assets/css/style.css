@@ -25,7 +25,7 @@ button.button{ border:none; cursor:pointer; }
 
 .menu{ display:flex; height:100%; margin:0; padding:0; }
 .menu li{ list-style:none; }
-.menu li a{ display:flex; height:100%; background:transparent; padding:0 15px; align-items:center; text-decoration:none; font-weight:bold; transition: all .3s ease-in-out}
+.menu li a{ display:flex; height:100%; color:#000; background:transparent; padding:0 15px; align-items:center; text-decoration:none; font-weight:bold; transition: all .3s ease-in-out}
 .menu li a:hover{ background: rgba(186, 37, 251,.6); color:#fff; }
 .menu.social-menu a{ font-size:0; padding:0 5px; font-weight:normal; }
 .menu.social-menu a i{ font-size:24px }
