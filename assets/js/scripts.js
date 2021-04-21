@@ -172,4 +172,19 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 
+  /* Technologies */
+  var items = document.querySelectorAll('.gallery-item[data-technologies]');
+  for (var i in items) {
+    var item = items[i];
+    if (typeof item.getAttribute === 'function') {
+      var techs = item.getAttribute('data-technologies').split(',');
+      var html = '<span class="technologies" title="Este projeto utiliza ' + techs.join(' + ') + '">';
+      for( var j in techs ){
+        html += '<span data-tech="' + techs[j] + '"></span>';
+      }
+      html += '</span>';
+      
+      item.innerHTML += html;
+    }
+  }
 });
