@@ -1,0 +1,44 @@
+@import url("https://jony.dev/fonts/qanelas-soft/qanelas-font.css");
+
+/* Reset */
+html {
+  box-sizing: border-box;
+  font-size: 18px;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* General Styles */
+body {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(242, 242, 242, 1) 50%,
+    rgba(222, 222, 222, 1) 100%
+  );
+  padding: 0;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+  padding-top: 56px;
+  font-family: "qanelas_soft", sans-serif;
+  color: #373435;
+}
+a {
+  color: #ba25fb;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "qanelas_soft", sans-serif;
+}
