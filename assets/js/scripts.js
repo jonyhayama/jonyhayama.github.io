@@ -23,11 +23,11 @@ document.addEventListener("DOMContentLoaded", function() {
         '<div class="post-excerpt">{{$description}}</div>' +
       '</div>' +
     '</div>')
-    .replace('{{$cover_image}}', $cover_image)
-    .replace('{{$description}}', $description)
-    .replace('{{$published}}', $published)
-    .replace('{{$title}}', $title)
-    .replace('{{$url}}', $url);
+    .replaceAll('{{$cover_image}}', $cover_image)
+    .replaceAll('{{$description}}', $description)
+    .replaceAll('{{$published}}', $published)
+    .replaceAll('{{$title}}', $title)
+    .replaceAll('{{$url}}', $url);
   };
 
   loadBlogPosts = function(){
