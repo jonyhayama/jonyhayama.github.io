@@ -137,3 +137,25 @@ h6 {
 .hayama-dark .hayama-section-title {
   color: #383838;
 }
+
+.hayama-credits {
+  margin-top: 4rem;
+}
+
+.hayama-credits p {
+  margin-bottom: 0.75rem;
+  margin-top: 0rem;
+}
+
+.hayama-credits ul {
+  margin: 0;
+  padding: 0;
+}
+
+.hayama-credits li {
+  list-style: none;
+}
+
+.hayama-credits li:before {
+  content: "- ";
+}
