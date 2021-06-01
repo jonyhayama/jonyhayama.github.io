@@ -17,12 +17,6 @@ h1, h2, h3, h4, h5, h6{ font-family: "qanelas_soft", sans-serif; }
 .button:hover{ background: #BA25FB; color:#69f2c6 }
 button.button{ border:none; cursor:pointer; }
 
-#site-logo{font-size:0; padding:5px;display:flex;align-items: center;width:20vw;}
-#site-logo:before{ content: ''; width:90%; height:90%; margin:auto; background: url('../img/jony-logo-alt.png') no-repeat center; background-size:contain; }
-.night-mode #site-logo:before{ background: url('../img/jony-logo.png') no-repeat center; background-size:contain; }
-
-#main-header{ display:flex; background:#fff; box-shadow:0 0 5px rgba(0,0,0,0.3); position:fixed; top:0; left:0; right:0; z-index:99; height:56px; transition: all .3s ease-in-out; }
-
 .menu{ display:flex; height:100%; margin:0; padding:0; }
 .menu li{ list-style:none; }
 .menu li a{ display:flex; height:100%; color:#000; background:transparent; padding:0 15px; align-items:center; text-decoration:none; font-weight:bold; transition: all .3s ease-in-out}
@@ -177,9 +171,6 @@ body.night-mode{ background: rgb(38,38,38);
   background: linear-gradient(45deg, rgba(38,38,38,1) 0%, rgba(56,56,56,1) 50%, rgba(71,71,71,1) 100%);
   color:#fff;
 }
-
-body.night-mode #main-header{ background: #373435 }
-body.night-mode #main-header a{ color: #fff }
 
 body.night-mode #btn-night-mode:before{opacity:0;}
 body.night-mode #btn-night-mode:after{opacity:1}

@@ -53,8 +53,10 @@ document.addEventListener("DOMContentLoaded", function() {
     var $body = document.querySelector('body');
     if( $body.classList.contains('night-mode') ){
       $body.classList.remove('night-mode');
+      $body.classList.remove('hayama-dark');
     } else {
-      $body.classList.add('night-mode')
+      $body.classList.add('night-mode');
+      $body.classList.add('hayama-dark');
     }
   });
 
