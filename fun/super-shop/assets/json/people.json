@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Charles Xavier",
+    "worth": "3 500 000 000",
+    "avatar": "assets/img/people/charles-xavier.png"
+  },
+  {
+    "id": 2,
+    "name": "Norman Osborn",
+    "worth": "10 000 000 000",
+    "avatar": "assets/img/people/norman-osborn.png"
+  },
+  {
+    "id": 3,
+    "name": "Wilson Fisk",
+    "worth": "40 000 000 000",
+    "avatar": "assets/img/people/wilson-fisk.png"
+  },
+  {
+    "id": 4,
+    "name": "Tony Stark",
+    "worth": "80 000 000 000",
+    "avatar": "assets/img/people/tony-stark.png"
+  },
+  {
+    "id": 5,
+    "name": "Maxwell Lord",
+    "worth": "3 800 000 000",
+    "avatar": "assets/img/people/maxwell-lord.png"
+  },
+  {
+    "id": 6,
+    "name": "Oliver Queen",
+    "worth": "7 000 000 000",
+    "avatar": "assets/img/people/oliver-queen.png"
+  },
+  {
+    "id": 7,
+    "name": "Lex Luthor",
+    "worth": "75 000 000 000",
+    "avatar": "assets/img/people/lex-luthor.png"
+  },
+  {
+    "id": 8,
+    "name": "Bruce Wayne",
+    "worth": "80 000 000 000",
+    "avatar": "assets/img/people/bruce-wayne.png"
+  },
+  {
+    "id": 9,
+    "name": "Elon Musk",
+    "worth": "197 000 000 000",
+    "avatar": "assets/img/people/elon-musk.png"
+  },
+  {
+    "id": 10,
+    "name": "Jeff Bezos",
+    "worth": "182 000 000 000",
+    "avatar": "assets/img/people/jeff-bezos.png"
+  },
+  {
+    "id": 11,
+    "name": "Bill Gates",
+    "worth": "132 000 000 000",
+    "avatar": "assets/img/people/bill-gates.png"
+  },
+  {
+    "id": 12,
+    "name": "Random Lottery Winner",
+    "worth": "141 000 000",
+    "avatar": "assets/img/people/random-lottery-winner.png"
+  }
+]
