@@ -1,0 +1,27 @@
+baseURL = 'https://jony.dev'
+languageCode = 'pt-br'
+title = 'Jony Hayama'
+theme = 'terminal'
+
+[params]
+  centerTheme = true
+
+[languages]
+  [languages.pt]
+    languageName = "Portuguës"
+    title = "Jony Hayama"
+    subtitle = "Web Developer"
+    owner = ""
+    keywords = ""
+    copyright = ""
+    menuMore = "mais"
+    readMore = "Continuar lendo"
+    readOtherPosts = "Leia outras postagens"
+    newerPosts = "Postagens mais recentes"
+    olderPosts = "Postagens mais antigas"
+    missingContentMessage = "Página não encontrada..."
+    missingBackButtonLabel = "Voltar para Home"
+
+    [languages.en.params.logo]
+      logoText = "Jony Hayama"
+      logoHomeLink = "/"
