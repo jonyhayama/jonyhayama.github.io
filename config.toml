@@ -6,6 +6,7 @@ theme = 'terminal'
 
 [params]
   centerTheme = true
+  favicon = 'img/favicon.png'
 
 [languages]
   [languages.pt-br]
