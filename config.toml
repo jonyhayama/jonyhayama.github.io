@@ -1,5 +1,6 @@
 baseURL = 'https://jony.dev'
 languageCode = 'pt-br'
+defaultContentLanguage= 'pt-br'
 title = 'Jony Hayama'
 theme = 'terminal'
 
@@ -7,8 +8,8 @@ theme = 'terminal'
   centerTheme = true
 
 [languages]
-  [languages.pt]
-    languageName = "Portuguës"
+  [languages.pt-br]
+    languageName = "Português"
     title = "Jony Hayama"
     subtitle = "Web Developer"
     owner = ""
@@ -22,6 +23,6 @@ theme = 'terminal'
     missingContentMessage = "Página não encontrada..."
     missingBackButtonLabel = "Voltar para Home"
 
-    [languages.en.params.logo]
+    [languages.pt-br.params.logo]
       logoText = "Jony Hayama"
       logoHomeLink = "/"
