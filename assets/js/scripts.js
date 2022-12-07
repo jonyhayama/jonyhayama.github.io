@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
   };
 
   getBlogPostTemplate = function($post){
-    $cover_image = $post.cover_image;
+    $cover_image = $post.cover_image || $post.social_image;
     $description = $post.description;
     $published = formatDate( new Date($post.published_at) );
     $title = $post.title;
