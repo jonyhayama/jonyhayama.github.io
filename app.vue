@@ -10,3 +10,12 @@ useHead({
     <NuxtPage />
   </NuxtLayout>
 </template>
+
+<style lang="scss">
+:root:not([data-theme=light]) {
+  --background-color: #373435;
+  --color: #ffffff;
+  --primary: #ba25fb;
+  --primary-hover: #69f2c6;
+}
+</style>
