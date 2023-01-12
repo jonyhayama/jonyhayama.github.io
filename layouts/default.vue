@@ -30,7 +30,7 @@
 }
 
 .header {
-  background: var(--muted-border-color);
+  background: var(--primary-muted);
   padding: var(--grid-spacing-horizontal);
   margin-left: calc(var(--grid-spacing-horizontal) * -1);
 }
