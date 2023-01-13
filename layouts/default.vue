@@ -26,7 +26,6 @@
         <ul>
           <li><NuxtLink to="/">Home</NuxtLink></li>
           <li><NuxtLink to="/blog">Blog</NuxtLink></li>
-          <li><NuxtLink to="/curriculo">Currículo</NuxtLink></li>
         </ul>
       </nav>
     </aside>
