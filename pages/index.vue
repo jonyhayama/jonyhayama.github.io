@@ -21,6 +21,53 @@ const { data: articles } = await useBlog().fetchArticles();
       <h2>Blog</h2>
       <BlogList :articles="articles" />
     </section>
+    <section>
+      <h2>Just For Fun</h2>
+      <div class="grid">
+        <div>
+          <NuxtLink to="https://starlink-near-me.apps.jony.dev/" target="_blank">
+            <img src="~/assets/img/for-fun/starlink-near-me.jpg" />
+            <strong>Starlink Near Me</strong>
+            <span>Encontrando satélites próximos</span>
+          </NuxtLink>
+        </div>
+        <div>
+          <NuxtLink to="https://jony.dev/bingo" target="_blank">
+            <img src="~/assets/img/for-fun/bingo.jpg" />
+            <strong>Bingo</strong>
+            <span>Um simples jogo de bingo</span>
+          </NuxtLink>
+        </div>
+        <div>
+          <NuxtLink to="https://marvel.apps.jony.dev/" target="_blank">
+            <img src="~/assets/img/for-fun/find-marvel-characters.jpg" />
+            <strong>Find Marvel Characters</strong>
+            <span>Um simples campo de autocomplete</span>
+          </NuxtLink>
+        </div>
+        <div>
+          <NuxtLink to="fun/clock" target="_blank">
+            <img src="~/assets/img/for-fun/clock.jpg" />
+            <strong>Clock</strong>
+            <span>Apenas um relógio em JS</span>
+          </NuxtLink>
+        </div>
+        <div>
+          <NuxtLink to="fun/hello-phaser" target="_blank">
+            <img src="~/assets/img/for-fun/hello-phaser.jpg" />
+            <strong>Hello Phaser</strong>
+            <span>Mini-game feito utilizando Phaser</span>
+          </NuxtLink>
+        </div>
+        <div>
+          <NuxtLink to="fun/super-shop" target="_blank">
+            <img src="~/assets/img/for-fun/super-shop.jpg" />
+            <strong>Super Shop</strong>
+            <span>"Gaste" o dinheiro do seu bilionário favorito 😜</span>
+          </NuxtLink>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
