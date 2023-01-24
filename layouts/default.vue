@@ -26,6 +26,7 @@
         <ul>
           <li><NuxtLink to="/">Home</NuxtLink></li>
           <li><NuxtLink to="/blog">Blog</NuxtLink></li>
+          <li><NuxtLink to="/fun">Just for fun</NuxtLink></li>
         </ul>
       </nav>
     </aside>
@@ -40,6 +41,7 @@
   display: grid;
   grid-template-columns: 280px 1fr;
   gap: var(--grid-spacing-horizontal);
+  min-height: 100vh;
 }
 
 .header {
