@@ -5,8 +5,11 @@
         <NuxtLink to="/">
           <img src="~/assets/img/jony-logo.png" />
         </NuxtLink>
-        <img src="~/assets/img/jony-profile-2019-lowres.jpg" />
-        <h1 class="site-name">Jony Hayama</h1>
+        <hgroup class="site-name">
+          <img src="~/assets/img/jony-profile-2019-lowres.jpg" />
+          <h1>Jony Hayama</h1>
+          <h2>Web Developer</h2>
+        </hgroup>
       </div>
       <nav>
         <ul class="icon-menu">
@@ -51,6 +54,13 @@
 
   .site-name {
     margin-bottom: var(--spacing);
+    text-align: center;
+
+    img {
+      width: 80%;
+      border-radius: 50%;
+      margin: var(--spacing) 0;
+    }
   }
 }
 
