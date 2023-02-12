@@ -1,0 +1,16 @@
+$grey-hue: 0 !default;
+$grey-50: hsl($grey-hue, 0%, 94%) !default;
+$grey-100: hsl($grey-hue, 0%, 86%) !default;
+$grey-200: hsl($grey-hue, 0%, 77%) !default;
+$grey-300: hsl($grey-hue, 0%, 68%) !default;
+$grey-400: hsl($grey-hue, 0%, 59%) !default;
+$grey-500: hsl($grey-hue, 0%, 50%) !default;
+$grey-600: hsl($grey-hue, 0%, 41%) !default;
+$grey-700: hsl($grey-hue, 0%, 32%) !default;
+$grey-800: hsl($grey-hue, 0%, 23%) !default;
+$grey-900: hsl($grey-hue, 0%, 15%) !default;
+
+$primary-hue: 281.8;
+
+// Import Pico
+@import "@picocss/pico/scss/pico";
