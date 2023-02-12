@@ -21,13 +21,20 @@ const { data: funProjects } = useFun().fetchProjects();
       </div>
     </section>
     <section>
-      <h2>Blog</h2>
-      <BlogList :articles="articles" />
+      <hgroup>
+        <h2>Blog</h2>
+        <hr />
+      </hgroup>
+      <BlogList :articles="articles.slice(0, 4)" />
+      <NuxtLink to="/blog" role="button">Mais Postagens</NuxtLink>
     </section>
     <section>
-      <h2>Just For Fun</h2>
+      <hgroup>
+        <h2>Just For Fun</h2>
+        <hr />
+      </hgroup>
       <div class="grid">
-        <div v-for="project in funProjects" :key="project.slug">
+        <div v-for="project in funProjects.slice(0, 4)" :key="project.slug">
           <NuxtLink :to="project.url" target="_blank">
             <img :src="project.cover" />
             <strong>{{ project.name }}</strong>
@@ -35,6 +42,7 @@ const { data: funProjects } = useFun().fetchProjects();
           </NuxtLink>
         </div>
       </div>
+      <NuxtLink to="/fun" role="button">Mais Projetos</NuxtLink>
     </section>
   </div>
 </template>
