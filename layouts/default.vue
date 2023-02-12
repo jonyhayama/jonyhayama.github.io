@@ -45,7 +45,7 @@
 }
 
 .header {
-  background: var(--primary-muted);
+  background: var(--card-background-color);
   padding: var(--grid-spacing-horizontal);
   margin-left: calc(var(--grid-spacing-horizontal) * -1);
 

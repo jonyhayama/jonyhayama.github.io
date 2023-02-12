@@ -14,3 +14,7 @@ $primary-hue: 281.8;
 
 // Import Pico
 @import "@picocss/pico/scss/pico";
+
+div[role="document"] {
+  margin-top: var(--spacing);
+}

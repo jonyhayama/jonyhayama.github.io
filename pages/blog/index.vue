@@ -6,8 +6,11 @@ const { data: articles } = await useBlog().fetchArticles();
 </script>
 
 <template>
-  <div>
-    Page: Blog
+  <div role="document">
+    <hgroup>
+      <h1>Blog</h1>
+      <h2>Alguns artigos que escrevi ao logno do tempo (originalmente postados em <NuxtLink to="https://dev.to/jonyhayama" target="_blank">dev.to</NuxtLink>)</h2>
+    </hgroup>
     <BlogList :articles="articles" />
   </div>
 </template>
