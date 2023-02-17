@@ -6,18 +6,18 @@ const { data: funProjects } = useFun().fetchProjects();
 <template>
   <div role="document">
     <section>
-      <hgroup>
+      <div class="headings">
         <h2>Blog</h2>
         <hr />
-      </hgroup>
+      </div>
       <BlogList :articles="articles.slice(0, 4)" />
       <NuxtLink to="/blog" role="button">Mais Postagens</NuxtLink>
     </section>
     <section>
-      <hgroup>
+      <div class="headings">
         <h2>Just For Fun</h2>
         <hr />
-      </hgroup>
+      </div>
       <div class="grid">
         <div v-for="project in funProjects.slice(0, 4)" :key="project.slug">
           <NuxtLink :to="project.url" target="_blank">
@@ -30,10 +30,10 @@ const { data: funProjects } = useFun().fetchProjects();
       <NuxtLink to="/fun" role="button">Mais Projetos</NuxtLink>
     </section>
     <section>
-      <hgroup>
+      <div class="headings">
         <h2>Sobre</h2>
         <hr />
-      </hgroup>
+      </div>
       <p>Sou doido por programação. Sério. Desde que fiz meu primeiro cursinho de Web Design há 15 anos atrás (e fui contratado para lecionar nessa escola) nunca parei.</p>
       <p>Depois de me formar em Análise e Desenvolvimento de Sistemas, trabalhar bastante, fundar minha própria empresa (junto com alguns sócios), fazer pós em Tecnologias para Aplicações Web, sair da empresa que co-fundei e trabalhar mais um pouco, conheci um parceiro de trabalho (grande Thalim, é noix) que me mostrou uma forma diferente de fazer as coisas. Foi então que comecei a fazer freelas. Já não sou mais 100% do tempo dedicado aos projetos paralelos, mas ainda estou disponível para trabalharmos juntos.</p>
       <p>Mineiro com orgulho, sou um desenvolvedor no estilo "me dá esse trem aí que eu faço". Já trabalhei com HTML, CSS, JS, PHP, Ruby on Rails, Elixir, WordPress e estou sempre disposto a "dar um pitaco"</p>  

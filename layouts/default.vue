@@ -5,11 +5,11 @@
         <NuxtLink to="/">
           <img src="~/assets/img/jony-logo.png" />
         </NuxtLink>
-        <hgroup class="site-name">
+        <div class="headings site-name">
           <img src="~/assets/img/jony-profile-2019-lowres.jpg" />
           <h1>Jony Hayama</h1>
           <h2>Web Developer</h2>
-        </hgroup>
+        </div>
       </div>
       <nav>
         <ul class="icon-menu">
