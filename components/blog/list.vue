@@ -7,7 +7,7 @@ const { articles } = toRefs(props)
 </script>
 
 <template>
-  <ul>
+  <div>
     <BlogListItem v-for="article in articles" :article="article" />
-  </ul>
+  </div>
 </template>

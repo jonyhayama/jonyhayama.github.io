@@ -33,7 +33,7 @@
         </ul>
       </nav>
     </aside>
-    <main>
+    <main class="container">
       <slot></slot>
     </main>
   </div>
