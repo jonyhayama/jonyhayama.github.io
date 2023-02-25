@@ -7,14 +7,6 @@ const { data: funProjects } = useFun().fetchProjects();
   <div role="document">
     <section>
       <div class="headings">
-        <h2>Blog</h2>
-        <hr />
-      </div>
-      <BlogList :articles="articles.slice(0, 4)" />
-      <NuxtLink to="/blog" role="button">Mais Postagens</NuxtLink>
-    </section>
-    <section>
-      <div class="headings">
         <h2>Just For Fun</h2>
         <hr />
       </div>
@@ -28,6 +20,14 @@ const { data: funProjects } = useFun().fetchProjects();
         </div>
       </div>
       <NuxtLink to="/fun" role="button">Mais Projetos</NuxtLink>
+    </section>
+    <section>
+      <div class="headings">
+        <h2>Blog</h2>
+        <hr />
+      </div>
+      <BlogList :articles="articles.slice(0, 4)" />
+      <NuxtLink to="/blog" role="button">Mais Postagens</NuxtLink>
     </section>
     <section>
       <div class="headings">
