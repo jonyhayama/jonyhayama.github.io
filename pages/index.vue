@@ -10,15 +10,7 @@ const { data: funProjects } = useFun().fetchProjects();
         <h2>Just For Fun</h2>
         <hr />
       </div>
-      <div class="grid">
-        <div v-for="project in funProjects.slice(0, 4)" :key="project.slug">
-          <NuxtLink :to="project.url" target="_blank">
-            <img :src="project.cover" />
-            <strong>{{ project.name }}</strong>
-            <div>{{ project.excerpt }}</div>
-          </NuxtLink>
-        </div>
-      </div>
+      <ProjectList :projects="funProjects.slice(0, 4)" />
       <NuxtLink to="/fun" role="button">Mais Projetos</NuxtLink>
     </section>
     <section>
