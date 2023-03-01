@@ -11,7 +11,7 @@ const { data: funProjects } = useFun().fetchProjects();
         <hr />
       </div>
       <ProjectList :projects="funProjects.slice(0, 4)" />
-      <NuxtLink to="/fun" role="button">Mais Projetos</NuxtLink>
+      <NuxtLink to="/fun" role="button" style="margin-top: var(--spacing);">Mais Projetos</NuxtLink>
     </section>
     <section>
       <div class="headings">

@@ -8,8 +8,12 @@ const { projects } = toRefs(props)
 
 <template>
   <div class="grid">
-    <div v-for="project in projects" :key="project.slug">
-      <ProjectListItem :project="project" />
-    </div>
+    <ProjectListItem v-for="project in projects" :key="project.slug" :project="project" />
   </div>
 </template>
+
+<style lang="scss" scoped>
+.grid {
+  grid-row-gap: var(--grid-spacing-horizontal);
+}
+</style>
